@@ -1,0 +1,11 @@
+name: Testing
+on: push
+
+jobs:
+  test_project:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Perform tests on functions
+      run: |
+        python3 test_functions.py
